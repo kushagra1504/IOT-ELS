@@ -1,0 +1,17 @@
+{
+    "group": "group11",
+
+    "endpoint" : "<End Point>",
+
+    "clientId" : "techevent",
+
+    "rootCAPath" : "<Root CA Path>",
+
+    "privateKeyPath" : "<IOT Private Key Path>",
+
+    "certificatePath" : "<IOT Certificate Path>",
+
+    "port" : 8883,
+
+    "topic" : "<Topic>"
+}
