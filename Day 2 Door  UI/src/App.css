@@ -1,0 +1,123 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #FDFCF6;
+    font-family: 'Avenir next', Lato, Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    color: #111;
+  }
+  
+  .container {
+    padding: 60px 30px;
+    text-align: center;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex
+  }
+  
+  .doorbox {
+    display: inline-block;
+    margin-left: 25px;
+    margin-right: 25px;
+    background: #eee;
+    border-radius: 0 2px 2px 0;
+    box-shadow: 10px 5px 36px rgba(0,0,0,0.16);
+    position: relative;
+    border: 2px solid rgb(61, 59, 59);
+  }
+  
+  .door {
+    width: 300px;
+    height: 600px;
+    border-radius: 0 3px 3px 0;
+    background: #FDF4E8;
+    position: relative;
+    cursor: pointer;
+    transition: all 700ms ease;
+    transform-origin: 0% 0%;
+    -webkit-transform: perspective(900) rotateY(0deg);
+    border: 2px solid rgb(61, 59, 59);
+  }
+  
+  /* .door:after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #000000;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+  } */
+  .aws-logo {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+  }
+  .open .aws-logo {
+      display: none;
+  }
+  .doorbox:hover .door { 
+    -webkit-transform: perspective(1000) rotateY(-9deg);
+  }
+  .doorbox.open .door { 
+    -webkit-transform: perspective(5000) rotateY(-180deg);
+  }
+
+  .MuiTableCell-head {
+        color: rgba(0, 0, 0, 0.54);
+        font-size: 1rem !important;
+        font-weight: 900 !important;
+        line-height: 1.3125rem;
+    }
+    
+    .blinking{
+        animation:blinkingText 0.6s infinite;
+        font-weight: 900 !important;
+        font-size: 32px;
+    }
+
+    @keyframes blinkingText{
+        0%{		color: #FF0000;	}
+        50%{	color: transparent;	}
+        100%{	color: #ff0000;	}
+    }
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
