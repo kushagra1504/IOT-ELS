@@ -1,0 +1,2 @@
+.no-badge-border { border: solid 5px #5fb9ed }
+    .no-badge-border .hole-wrapper .hole { width: 60px; height: 13px; background-color: #f3f3f3; box-shadow: inset 0px 0px 0px 3px #5fb9ed, inset 0px 0px 5px 3px rgba(0, 0, 0, 0.6)}
